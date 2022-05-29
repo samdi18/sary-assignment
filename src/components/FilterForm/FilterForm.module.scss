@@ -1,0 +1,75 @@
+.filterform {
+  display: block;
+  min-width: 400px;
+  transition: all 2s ease-out;
+  background-color: white;
+
+  h1 {
+    text-align: center;
+    border-bottom: 2px solid gray;
+    padding: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      padding: 0.75rem;
+      border: none;
+      border-bottom: 1px solid gray;
+      outline: none;
+    }
+  }
+
+  &__btn {
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    padding: 1rem;
+    align-self: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  &__resetbtn {
+    background-color: gray !important;
+  }
+}
+
+.customDateInput {
+  // border: 1px solid maroon;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+
+  svg::before {
+    content: '';
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+  }
+
+  .placeholder {
+    color: grey;
+  }
+}
+
+.sidebar {
+  display: none;
+  transition: all 2s ease-out;
+}

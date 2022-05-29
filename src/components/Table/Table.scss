@@ -1,0 +1,53 @@
+.heroes-table {
+  background-color: white;
+  border: 1px solid green;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+table {
+  td,
+  th {
+    &:not(:last-child) {
+      border-right: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  }
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  tbody {
+    td {
+      padding: 0.75rem;
+    }
+  }
+}
+
+.heroes-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 30px;
+
+  input {
+    margin-right: 1rem;
+    padding: 0.25rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+}
